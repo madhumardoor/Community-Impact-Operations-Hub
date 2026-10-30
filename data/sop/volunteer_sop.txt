@@ -1,0 +1,15 @@
+Volunteer Registration SOP
+
+New volunteers provide their full name and a valid email address. Phone number is optional. Duplicate email addresses must be rejected with a clear message. New volunteers begin with pending status until a coordinator reviews the application.
+
+Volunteer Assignment SOP
+
+A volunteer must exist before an assignment is created. Each assignment includes an activity name and programme. Assignment status begins as planned.
+
+Data Handling SOP
+
+Use only the minimum personal information needed. Never place API keys, passwords, or beneficiary data in source control or public AI prompts. Use synthetic data for demos.
+
+Workflow Failure SOP
+
+Inspect execution history and error details. Check authentication, request payloads, service availability, and database connectivity. Retry only when safe to repeat. Record the cause and notify the responsible team if users are affected.

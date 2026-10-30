@@ -1,0 +1,1 @@
+{"name":"community-impact-hub-ui","private":true,"version":"0.1.0","type":"module","scripts":{"dev":"vite","build":"vite"},"dependencies":{"@vitejs/plugin-react":"latest","vite":"latest","react":"latest","react-dom":"latest"}}
