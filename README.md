@@ -35,3 +35,6 @@ Through Vercel: `/api/health`, `/api/docs`, `/api/volunteers`, `/api/reports/sum
 
 ## Security and production hardening
 This is a learning scaffold, not production-ready. Before using real data, add authentication/authorisation, webhook authentication/signature validation, rate limits, migrations, audit logging, stronger SOP retrieval, secret rotation, privacy review, and automated integration tests. Do not expose beneficiary data to public AI tools.
+
+## Supabase sample data
+After running `database/schema.sql` in the Supabase SQL Editor, run `database/sample_data.sql` to insert fictional volunteer and assignment records. These are synthetic demo records only.

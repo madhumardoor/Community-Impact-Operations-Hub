@@ -12,6 +12,15 @@ except ImportError:  # Vercel service root is the backend directory
 load_dotenv()
 app = FastAPI(title='Community Impact Operations Hub', version='0.1.0')
 
+# Vercel exposes this service under /api. Strip that public prefix before
+# FastAPI matches its internal routes such as /health and /volunteers.
+try:
+    from .vercel_middleware import StripApiPrefix
+except ImportError:
+    from vercel_middleware import StripApiPrefix
+
+app.add_middleware(StripApiPrefix)
+
 class VolunteerCreate(BaseModel):
     full_name: str = Field(min_length=2, max_length=120)
     email: EmailStr
